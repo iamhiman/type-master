@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CDAA7D;
+}
+
+/* ==================================================
+                    Content Div
+================================================== */
+.content {
+    background-color: #E7CCA8;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 500px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-heading {
+    margin-bottom: 20px;
+}
+
+.red {
+    color: #FA1D2F;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.yellow {
+    color: #b49c14;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.green {
+    color: #385E0F;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ==================================================
+                    Container Div
+================================================== */
+
+.container {
+    width: 500px;
+    background-color: #E7CCA8;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    position: absolute;
+    padding: 20px;
+    border-radius: 10
+}
+
+.card-heading {
+    background: #CDAA7D;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.card-para {
+    margin-top: 15px;
+}
+
+#word {
+    margin: 10px 0;
+}
+
+#text {
+    width: 300px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.time-container {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    background-color: #df4451;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.score-container {
+    position: absolute;
+    top: 75px;
+    right: 25px;
+    background-color: #76c740;
+    padding: 5
+    border-radius: 5px;
+}
+
+.game-over {
+    background-color: inherit;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.result-head {
+    margin-bottom: 20px;
+}
+
+.result-para {
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 6px 10px;
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #000000;
+    margin-top: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(194, 154, 101);
+    border: 1px solid black;
+    color: #201e1e;
+}
+
+/* ==================================================
+                   View Code Div
+================================================== */
+
+.view-code {
+    width: 160px;
+    background-color: #E7CCA8;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-code a
+{
+    font-weight: bo
+    text-decoration: none;
+}
+
+.view-code img
+{
+    width: 40px;
+}
+
+/* ==================================================
+                  Responsive Design
+================================================== */
+
+@media screen and (max-width:540px) {
+    .content {
+        width: 400px;
+    }
+
+    .red,
+    .yellow,
+    .green {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 400px;
+
+    }
+}
+
+@media screen and (max-width:420px) {
+    .content {
+        width: 350px;
+    }
+
+    .red,
+    .yellow,
+    .green {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 350px;
+        top: 75%;
+        left: 50%;
+transform: translate(-50%, -75%);
+    }
+
+    .view-code {
+        top: 92%;
+        left: 50%;
+        transform: translate(-50%, -92%);
+    }
+}
